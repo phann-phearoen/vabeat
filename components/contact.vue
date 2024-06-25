@@ -185,6 +185,7 @@ export default defineComponent({
       this.snackbar.color = "light-blue-darken-2";
       this.snackbar.model = true;
       this.sending = false;
+      window.scrollTo({ top: 0, behavior: "smooth" });
     },
 
     async validate() {
