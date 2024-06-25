@@ -118,7 +118,6 @@
 import { defineComponent } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import emailjs from "@emailjs/browser";
 
 export default defineComponent({
   data() {
@@ -134,10 +133,6 @@ export default defineComponent({
           /.+@.+\..+/.test(v) || "正しいEmailアドレスの形式で入力してください",
       ],
       sending: false,
-
-      ejsService: "date@wannagrow.co.jp",
-      ejsTemplate: "mamaeco",
-
       snackbar: {
         model: false,
         color: "",
@@ -148,42 +143,85 @@ export default defineComponent({
   methods: {
     async sendEmail() {
       if (!(await this.validate())) return;
-      const obj = {
-        company: this.company,
-        name: this.name,
-        email: this.email,
-        inquiry: this.inquiry,
-      };
 
       this.sending = true;
-      await emailjs
-        .send(
-          this.ejsService,
-          this.ejsTemplate,
-          obj,
-          import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
-        )
-        .then((res) => {
-          this.snackbar.text = "メールが送信されました";
-          this.snackbar.color = "light-blue-darken-2";
-          this.snackbar.model = true;
-        })
-        .catch((err) => {
-          console.log(err);
-          this.snackbar.text = "エラーが発生されました";
-          this.snackbar.color = "red";
-          this.snackbar.model = true;
-        })
-        .finally(() => {
-          this.sending = false;
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        });
+      await $fetch('api/sendMail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: {
+          to: this.email,
+          subject: '【バビート】お問い合わせありがとうございます',
+          html: this.mailTemplateToUser(this.name, this.company, this.email, this.inquiry),
+        }
+      })
+      .catch(err => {
+        console.log(err);
+        this.snackbar.text = "エラーが発生されました";
+        this.snackbar.color = "red";
+        this.snackbar.model = true;
+      });
+      // send email to admin
+      await $fetch('api/sendMail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: {
+          to: import.meta.env.VITE_EMAIL,
+          subject: '【バビート】お問い合わせがありました。',
+          html: this.mailTemplateToAdmin(this.name, this.company, this.email, this.inquiry),
+        }
+      })
+      .catch(err => {
+        console.log(err);
+        this.snackbar.text = "エラーが発生されました";
+        this.snackbar.color = "red";
+        this.snackbar.model = true;
+      });
+
+      this.snackbar.text = "メールが送信されました";
+      this.snackbar.color = "light-blue-darken-2";
+      this.snackbar.model = true;
+      this.sending = false;
     },
 
     async validate() {
-      const { valid } = await this.$refs.form.validate();
+      const { valid } = await this.$refs?.form?.validate();
       return valid ? true : false;
     },
+
+    mailTemplateToUser(name: string, company :string, email: string, inquiry: string) {
+      return `
+<p><span style="font-size: 10pt;">${ name } さま</span></p>
+<p><span style="font-size: 10pt;">バビート運営チームです。</span><br><span style="font-size: 10pt;">このたびはお問い合わせを頂き、誠にありがとうございます。</span></p>
+<p><span style="font-size: 10pt;">以下の内容で受け付けました。</span></p>
+<p><span style="font-size: 10pt;">------------------ 内容 ------------------</span></p>
+<p><span style="font-size: 10pt;">会社名：${ company }</span></p>
+<p><span style="font-size: 10pt;">お名前：${ name }</span></p>
+<p><span style="font-size: 10pt;">メールアドレス：${ email }</span></p>
+<p><span style="font-size: 10pt;">お問い合わせ内容：${ inquiry }</span></p>
+<p><span style="font-size: 10pt;">-------------------------------------------</span></p>
+<p><span style="font-size: 10pt;">3日以上経過しても連絡がない場合、何らかのトラブルにより</span><br><span style="font-size: 10pt;">こちらにメールが届いていない可能性がございます。</span><br><span style="font-size: 10pt;">その際は、お手数をおかけしますが再度ご連絡いただけますと幸いです。</span></p>
+<p><span style="font-size: 10pt;">何卒よろしくお願い申し上げます。</span></p>
+<p><span style="font-size: 10pt;">----------------------------------------------</span><br><span style="font-size: 10pt;">このメールは自動で送信しております。</span></p>
+<p><span style="font-size: 10pt;">バビート株式会社</span><br><span style="font-size: 10pt;"><a class="c-link" href="https://vabeat.co.jp/" target="_blank" rel="noopener noreferrer" data-stringify-link="https://vabeat.co.jp/" data-sk="tooltip_parent">https://vabeat.co.jp/</a></span><br><span style="font-size: 10pt;">----------------------------------------------</span></p>
+`
+    },
+    mailTemplateToAdmin(name: string, company: string, email: string, inquiry: string) {
+      return `
+<p><span style="font-size: 10pt;">バビートコーポレートページにてお問合せがありました。</span></p>
+<p><span style="font-size: 10pt;">------------------ 内容 ------------------</span></p>
+<p><span style="font-size: 10pt;">会社名：${company }</span></p>
+<p><span style="font-size: 10pt;">お名前：${ name }</span></p>
+<p><span style="font-size: 10pt;">メールアドレス：${ email }</span></p>
+<p><span style="font-size: 10pt;">お問い合わせ内容：${ inquiry }</span></p>
+<p><span style="font-size: 10pt;">-------------------------------------------</span></p>
+<p><span style="font-size: 10pt;">このメールは自動で送信しております。</span></p>
+<p><span style="font-size: 10pt;">バビート株式会社</span><br><span style="font-size: 10pt;"><a class="c-link" href="https://vabeat.co.jp/" target="_blank" rel="noopener noreferrer" data-stringify-link="https://vabeat.co.jp/" data-sk="tooltip_parent">https://vabeat.co.jp/</a></span></p>
+      `
+    }
   },
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
