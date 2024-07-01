@@ -17,7 +17,7 @@
     <!-- normal screen -->
     <v-row class="ma-0 pa-0 d-none d-sm-flex">
       <v-col cols="12">
-        <a href="https://aji-navi.com" target="_blank" class="company-links">
+        <!-- <a href="https://aji-navi.com" target="_blank" class="company-links">
           <img
             src="/products/ajinavi.svg"
             alt="ajinavi"
@@ -25,7 +25,7 @@
             height="190"
             class="logos"
           />
-        </a>
+        </a> -->
       </v-col>
       <v-col cols="12">
         <a href="https://kinkan.travel/kinkanhouse-kitasenju" target="_blank" class="company-links">
@@ -33,6 +33,39 @@
             src="/products/kinkanhouse.svg"
             alt="kinkanhouse"
             id="kinkanhouse"
+            height="190"
+            class="logos"
+          />
+        </a>
+      </v-col>
+      <v-col cols="12">
+        <a href="https://kinkan.travel/kinkan-vip" target="_blank" class="company-links">
+          <img
+            src="/products/kinkan-vip.svg"
+            alt="kinkan-vip"
+            id="kinkan-vip"
+            height="190"
+            class="logos"
+          />
+        </a>
+      </v-col>
+      <v-col cols="12">
+        <a href="https://kinkan.travel/kinkan-meet" target="_blank" class="company-links">
+          <img
+            src="/products/kinkan-meet.svg"
+            alt="kinkan-meet"
+            id="kinkan-meet"
+            height="190"
+            class="logos"
+          />
+        </a>
+      </v-col>
+      <v-col cols="12">
+        <a href="https://kinkan.travel/kinkan-meet" target="_blank" class="company-links">
+          <img
+            src="/products/ajiron.svg"
+            alt="ajiron"
+            id="ajiron"
             height="190"
             class="logos"
           />
@@ -204,11 +237,11 @@ export default defineComponent({
 }
 #baritoku {
   position: absolute;
-  left: -850px;
+  left: -830px;
 }
 #logo1 {
   position: absolute;
-  left: -800px;
+  left: -780px;
 }
 #logo2 {
   position: absolute;
@@ -216,7 +249,19 @@ export default defineComponent({
 }
 #kinkanhouse {
   position: absolute;
-  left: -690px;
+  left: -685px;
+}
+#kinkan-meet {
+  position: absolute;
+  left: -735px;
+}
+#kinkan-vip {
+  position: absolute;
+  left: -740px;
+}
+#ajiron {
+  position: absolute;
+  left: -790px;
 }
 
 #baritoku-sm {
