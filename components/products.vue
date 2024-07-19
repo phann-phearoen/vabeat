@@ -17,7 +17,7 @@
     <!-- normal screen -->
     <v-row class="ma-0 pa-0 d-none d-sm-flex">
       <v-col cols="12">
-        <a href="https://aji-navi.com" target="_blank" class="company-links">
+        <!-- <a href="https://aji-navi.com" target="_blank" class="company-links">
           <img
             src="/products/ajinavi.svg"
             alt="ajinavi"
@@ -25,7 +25,7 @@
             height="190"
             class="logos"
           />
-        </a>
+        </a> -->
       </v-col>
       <v-col cols="12">
         <a href="https://kinkan.travel/kinkanhouse-kitasenju" target="_blank" class="company-links">
@@ -33,6 +33,39 @@
             src="/products/kinkanhouse.svg"
             alt="kinkanhouse"
             id="kinkanhouse"
+            height="190"
+            class="logos"
+          />
+        </a>
+      </v-col>
+      <v-col cols="12">
+        <a href="https://kinkan.travel/kinkan-vip" target="_blank" class="company-links">
+          <img
+            src="/products/kinkan-vip.svg"
+            alt="kinkan-vip"
+            id="kinkan-vip"
+            height="190"
+            class="logos"
+          />
+        </a>
+      </v-col>
+      <v-col cols="12">
+        <a href="https://kinkan.travel/kinkan-meet" target="_blank" class="company-links">
+          <img
+            src="/products/kinkan-meet.svg"
+            alt="kinkan-meet"
+            id="kinkan-meet"
+            height="190"
+            class="logos"
+          />
+        </a>
+      </v-col>
+      <v-col cols="12">
+        <a href="https://ajiron.aji-navi.com" target="_blank" class="company-links">
+          <img
+            src="/products/ajiron.svg"
+            alt="ajiron"
+            id="ajiron"
             height="190"
             class="logos"
           />
@@ -63,7 +96,7 @@
     </v-row>
     <!-- mobile screen -->
     <v-row class="ma-0 pa-0 d-flex d-sm-none font-weight-bold">
-      <v-col cols="12">
+      <!-- <v-col cols="12">
         <a href="https://aji-navi.com" target="_blank" class="company-links">
           <img
             src="/products/ajinavi-sm.svg"
@@ -77,7 +110,7 @@
         <div class="text-white">
           アジナビは、アジアトップクラスのソフトウェアエンジニアを中小企業に繋げます。<br>
         </div>
-      </v-col>
+      </v-col> -->
       <v-col cols="12">
         <a href="https://kinkan.travel/kinkanhouse-kitasenju" target="_blank" class="company-links">
           <img
@@ -90,11 +123,57 @@
         <div class="text-white">キンカンハウス北千住</div>
         <div class="hr-white"></div>
         <div class="text-white">
-          Kinkanhouse Kitasenju is a private accommodation<br>
-          with an online concierge service.<br>
-          If you have any problems, feel free to contact us.
+          Welcome to Kinkanhouse Kita-senju
         </div>
       </v-col>
+      <v-col cols="12">
+        <a href="https://kinkan.travel/kinkan-vip" target="_blank" class="company-links">
+          <img
+            src="/products/kinkan-vip-sm.svg"
+            alt="kinkan-vip-sm"
+            class="logo-sm"
+            id="kinkan-vip-sm"
+          />
+        </a>
+        <div class="text-white">kinkan VIP</div>
+        <div class="hr-white"></div>
+        <div class="text-white">
+          An exquisite experience with a Japanese owner. Experiences you won't find in travel guidebooks.
+        </div>
+      </v-col>
+
+      <v-col cols="12">
+        <a href="https://kinkan.travel/kinkan-meet" target="_blank" class="company-links">
+          <img
+            src="/products/kinkan-meet-sm.svg"
+            alt="kinkan-meet-sm"
+            class="logo-sm"
+            id="kinkan-meet-sm"
+          />
+        </a>
+        <div class="text-white">kinkan Meet</div>
+        <div class="hr-white"></div>
+        <div class="text-white">
+          Would you like to interaction with Japanese locals ? <br> At a Japanese drinking restaurant or a cafe.
+        </div>
+      </v-col>
+
+      <v-col cols="12">
+        <a href="https://ajiron.aji-navi.com" target="_blank" class="company-links">
+          <img
+            src="/products/ajiron-sm.svg"
+            alt="ajiron"
+            class="logo-sm"
+            id="ajiron-sm"
+          />
+        </a>
+        <div class="text-white">アジロン</div>
+        <div class="hr-white"></div>
+        <div class="text-white">
+          個人にITエンジニアを提供。破格でITエンジニアをパートナーに。
+        </div>
+      </v-col>
+
       <v-col cols="12">
         <a href="https://baritoku.jp" target="_blank" class="company-links">
           <img
@@ -115,9 +194,9 @@
         <a href="https://kokotag.jp" target="_blank" class="company-links">
           <img
             src="/products/kokotag-sm.svg"
-            alt="logo1-sm"
+            alt="kokotag"
             class="logo-sm"
-            id="logo1-sm"
+            id="kokotag"
           />
         </a>
         <div class="text-white">ココタグ</div>
@@ -168,20 +247,52 @@ export default defineComponent({
       left: "-200",
       duration: 1,
     });
-    gsap.to("#ajinavi-sm", {
-      scrollTrigger: {
-        trigger: "#ajinavi-sm",
-        start: "top 50%",
-      },
-      left: "-250",
-      duration: 1,
-    });
+    // gsap.to("#ajinavi-sm", {
+    //   scrollTrigger: {
+    //     trigger: "#ajinavi-sm",
+    //     start: "top 50%",
+    //   },
+    //   left: "-250",
+    //   duration: 1,
+    // });
     gsap.to("#kinkanhouse-sm", {
       scrollTrigger: {
         trigger: "#kinkanhouse-sm",
         start: "top 50%",
       },
-      left: "-200",
+      left: "-240",
+      duration: 1,
+    });
+    gsap.to("#kinkan-vip-sm", {
+      scrollTrigger: {
+        trigger: "#kinkan-vip-sm",
+        start: "top 50%",
+      },
+      left: "-250",
+      duration: 1,
+    });
+    gsap.to("#kinkan-meet-sm", {
+      scrollTrigger: {
+        trigger: "#kinkan-meet-sm",
+        start: "top 50%",
+      },
+      left: "-250",
+      duration: 1,
+    });
+    gsap.to("#kokotag", {
+      scrollTrigger: {
+        trigger: "#kokotag",
+        start: "top 50%",
+      },
+      left: "-250",
+      duration: 1,
+    });
+    gsap.to("#ajiron-sm", {
+      scrollTrigger: {
+        trigger: "#ajiron-sm",
+        start: "top 50%",
+      },
+      left: "-270",
       duration: 1,
     });
   },
@@ -204,11 +315,11 @@ export default defineComponent({
 }
 #baritoku {
   position: absolute;
-  left: -850px;
+  left: -830px;
 }
 #logo1 {
   position: absolute;
-  left: -800px;
+  left: -780px;
 }
 #logo2 {
   position: absolute;
@@ -216,7 +327,19 @@ export default defineComponent({
 }
 #kinkanhouse {
   position: absolute;
-  left: -690px;
+  left: -685px;
+}
+#kinkan-meet {
+  position: absolute;
+  left: -735px;
+}
+#kinkan-vip {
+  position: absolute;
+  left: -740px;
+}
+#ajiron {
+  position: absolute;
+  left: -790px;
 }
 
 #baritoku-sm {
@@ -233,9 +356,31 @@ export default defineComponent({
 }
 #kinkanhouse-sm {
   position: relative;
-  left: -400px;
+  left: -500px;
+}
+#kinkan-vip-sm {
+  position: relative;
+  left: -500px;
+}
+#kinkan-meet-sm {
+  position: relative;
+  left: -500px;
+}
+#ajiron-sm {
+  position: relative;
+  left: -500px;
+}
+#kokotag {
+  position: relative;
+  left: -500px;
 }
 .company-links {
   text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .v-col{
+    height: unset;
+    min-height: 150px;
+  }
 }
 </style>
