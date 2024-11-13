@@ -765,6 +765,11 @@
     semver "^7.3.5"
     tar "^6.1.11"
 
+"@mdi/font@^7.4.47":
+  version "7.4.47"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-7.4.47.tgz#2ae522867da3a5c88b738d54b403eb91471903af"
+  integrity sha512-43MtGpd585SNzHZPcYowu/84Vz2a2g31TvPMTm9uTiCSWzaheQySUcSyUH/46fPnuPQWof2yd0pGBtzee/IQWw==
+
 "@netlify/functions@^2.6.0":
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/@netlify/functions/-/functions-2.8.0.tgz#245f4be789891159d95391c171263ded8ee1ee3a"
@@ -992,7 +997,7 @@
     which "^3.0.1"
     ws "^8.17.1"
 
-"@nuxt/kit@3.12.2", "@nuxt/kit@^3.10.3", "@nuxt/kit@^3.11.2", "@nuxt/kit@^3.12.1", "@nuxt/kit@^3.12.2", "@nuxt/kit@^3.9.0":
+"@nuxt/kit@3.12.2", "@nuxt/kit@^3.10.3", "@nuxt/kit@^3.11.2", "@nuxt/kit@^3.12.1", "@nuxt/kit@^3.12.2":
   version "3.12.2"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.12.2.tgz#762cf62af4762c035a1f73965832e80e66005f5f"
   integrity sha512-5kOqEzfc3FsAncjK2je7vuq4/QsR5ypViTnop52mlFLf0Ku1NMCrWCSWYowAh4P0yqTACMAZYa+HdRZHscU84g==
@@ -2239,13 +2244,6 @@
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.4.30.tgz#72acfe8df65139dcf298e965fb2ab1cff419e400"
   integrity sha512-CLg+f8RQCHQnKvuHY9adMsMaQOcqclh6Z5V9TaoMgy0ut0tz848joZ7/CYFFyF/yZ5i2yaw7Fn498C+CNZVHIg==
 
-"@vuetify/loader-shared@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@vuetify/loader-shared/-/loader-shared-2.0.3.tgz#11451c717e4a352ec311da52a79c857cd256c92f"
-  integrity sha512-Ss3GC7eJYkp2SF6xVzsT7FAruEmdihmn4OCk2+UocREerlXKWgOKKzTN5PN3ZVN5q05jHHrsNhTuWbhN61Bpdg==
-  dependencies:
-    upath "^2.0.1"
-
 "@vueuse/core@10.11.0", "@vueuse/core@^10.11.0":
   version "10.11.0"
   resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-10.11.0.tgz#b042585a8bf98bb29c177b33999bd0e3fcd9e65d"
@@ -3008,7 +3006,7 @@ debug@2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.3, debug@^4.3.4, debug@^4.3.5:
+debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.4, debug@^4.3.5:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.5.tgz#e83444eceb9fedd4a1da56d671ae2446a01a6e1e"
   integrity sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==
@@ -6103,7 +6101,7 @@ ultrahtml@^1.5.3:
   resolved "https://registry.yarnpkg.com/ultrahtml/-/ultrahtml-1.5.3.tgz#e7a903a4b28a0e49b71b0801b444050bb0a369c7"
   integrity sha512-GykOvZwgDWZlTQMtp5jrD4BVL+gNn2NVlVafjcFUJ7taY20tqYdwdoWBFy6GBJsNTZe1GkGPkSl5knQAjtgceg==
 
-unconfig@^0.3.11, unconfig@^0.3.13:
+unconfig@^0.3.13:
   version "0.3.13"
   resolved "https://registry.yarnpkg.com/unconfig/-/unconfig-0.3.13.tgz#8612d57811c1316f30d95f45bb96ce8ce8afc10c"
   integrity sha512-N9Ph5NC4+sqtcOjPfHrRcHekBCadCXWTBzp2VYYbySOHW0PfD9XLCeXshTXjkPYwLrBr9AtSeU0CZmkYECJhng==
@@ -6308,11 +6306,6 @@ unwasm@^0.3.9:
     pkg-types "^1.0.3"
     unplugin "^1.10.0"
 
-upath@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/upath/-/upath-2.0.1.tgz#50c73dea68d6f6b990f51d279ce6081665d61a8b"
-  integrity sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==
-
 update-browserslist-db@^1.0.16:
   version "1.0.16"
   resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.0.16.tgz#f6d489ed90fb2f07d67784eb3f53d7891f736356"
@@ -6421,15 +6414,6 @@ vite-plugin-vue-inspector@^5.1.2:
     kolorist "^1.8.0"
     magic-string "^0.30.4"
 
-vite-plugin-vuetify@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/vite-plugin-vuetify/-/vite-plugin-vuetify-2.0.3.tgz#b65ee4e05cfc6bf2b478a32b6d58b42398519f1e"
-  integrity sha512-HbYajgGgb/noaVKNRhnnXIiQZrNXfNIeanUGAwXgOxL6h/KULS40Uf51Kyz8hNmdegF+DwjgXXI/8J1PNS83xw==
-  dependencies:
-    "@vuetify/loader-shared" "^2.0.3"
-    debug "^4.3.3"
-    upath "^2.0.1"
-
 vite@^5.0.0, vite@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/vite/-/vite-5.3.1.tgz#bb2ca6b5fd7483249d3e86b25026e27ba8a663e6"
@@ -6525,26 +6509,10 @@ vue@^3.4.19, vue@^3.4.29:
     "@vue/server-renderer" "3.4.30"
     "@vue/shared" "3.4.30"
 
-vuetify-nuxt-module@^0.14.1:
-  version "0.14.1"
-  resolved "https://registry.yarnpkg.com/vuetify-nuxt-module/-/vuetify-nuxt-module-0.14.1.tgz#a65b891a023f04a7cb422dbec595be86c9aa402a"
-  integrity sha512-rv7iFc0HrhFSO3JyWbFNXjuPuTfOx8unIdtTYat822vn5b9TVdZf5LffKv4fRrNgKEjmE/v9WT4yzxRVj3WIFA==
-  dependencies:
-    "@nuxt/kit" "^3.9.0"
-    defu "^6.1.4"
-    destr "^2.0.3"
-    local-pkg "^0.5.0"
-    pathe "^1.1.2"
-    perfect-debounce "^1.0.0"
-    ufo "^1.5.3"
-    unconfig "^0.3.11"
-    vite-plugin-vuetify "^2.0.3"
-    vuetify "^3.6.5"
-
-vuetify@^3.6.5:
-  version "3.6.10"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.6.10.tgz#abd005dc9af31afba2b36fcbca62c13c4f29c998"
-  integrity sha512-Myd9+EFq4Gmu61yKPNVS0QdGQkcZ9cHom27wuvRw7jgDxM+X4MT9BwQRk/Dt1q3G3JlK8oh+ZYyq5Ps/Z73cMg==
+vuetify@^3.7.4:
+  version "3.7.4"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.7.4.tgz#52de97ecb4e456c92dc81c723d1e21b1ddccdbc6"
+  integrity sha512-Y8UU5wUDQXC3oz2uumPb8IOdvB4XMCxtxnmqdOc+LihNuPlkSgxIwf92ndRzbOtJFKHsggFUxpyLqpQp+A+5kg==
 
 webidl-conversions@^3.0.0:
   version "3.0.1"

@@ -10,13 +10,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "@nuxtjs/sitemap": "^5.2.1",
     "gsap": "^3.12.5",
     "nodemailer": "^6.9.14",
     "nuxt": "^3.10.3",
     "vue": "^3.4.19",
     "vue-router": "^4.3.0",
-    "vuetify-nuxt-module": "^0.14.1"
+    "vuetify": "^3.7.4"
   },
   "devDependencies": {
     "sass": "^1.77.6"
