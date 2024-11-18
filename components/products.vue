@@ -17,7 +17,7 @@
     <!-- normal screen -->
     <v-row class="ma-0 pa-0 d-none d-sm-flex">
       <v-col cols="12">
-        <!-- <a href="https://aji-navi.com" target="_blank" class="company-links">
+        <!-- <a href="https://aji-navi.com" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/ajinavi.svg"
             alt="ajinavi"
@@ -28,7 +28,7 @@
         </a> -->
       </v-col>
       <v-col cols="12">
-        <a href="https://kinkan.travel/kinkanhouse-kitasenju" target="_blank" class="company-links">
+        <a href="https://kinkan.travel/kinkanhouse-kitasenju" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/kinkanhouse.svg"
             alt="kinkanhouse"
@@ -39,7 +39,7 @@
         </a>
       </v-col>
       <v-col cols="12">
-        <a href="https://kinkan.travel/kinkan-vip" target="_blank" class="company-links">
+        <a href="https://kinkan.travel/kinkan-vip" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/kinkan-vip.svg"
             alt="kinkan-vip"
@@ -50,7 +50,7 @@
         </a>
       </v-col>
       <v-col cols="12">
-        <a href="https://kinkan.travel/kinkan-meet" target="_blank" class="company-links">
+        <a href="https://kinkan.travel/kinkan-meet" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/kinkan-meet.svg"
             alt="kinkan-meet"
@@ -61,7 +61,7 @@
         </a>
       </v-col>
       <v-col cols="12">
-        <a href="https://ajiron.aji-navi.com" target="_blank" class="company-links">
+        <a href="https://ajiron.aji-navi.com" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/ajiron.svg"
             alt="ajiron"
@@ -72,7 +72,7 @@
         </a>
       </v-col>
       <v-col cols="12">
-        <a href="https://baritoku.jp" target="_blank" class="company-links">
+        <a href="https://baritoku.jp" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/baritoku.svg"
             alt="baritoku"
@@ -83,7 +83,7 @@
         </a>
       </v-col>
       <v-col cols="12">
-        <a href="https://kokotag.jp" target="_blank" class="company-links">
+        <a href="https://kokotag.jp" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/kokotag.svg"
             alt="logo1"
@@ -97,7 +97,7 @@
     <!-- mobile screen -->
     <v-row class="ma-0 pa-0 d-flex d-sm-none font-weight-bold">
       <!-- <v-col cols="12">
-        <a href="https://aji-navi.com" target="_blank" class="company-links">
+        <a href="https://aji-navi.com" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/ajinavi-sm.svg"
             alt="ajinavi"
@@ -112,7 +112,7 @@
         </div>
       </v-col> -->
       <v-col cols="12">
-        <a href="https://kinkan.travel/kinkanhouse-kitasenju" target="_blank" class="company-links">
+        <a href="https://kinkan.travel/kinkanhouse-kitasenju" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/kinkanhouse-sm.svg"
             alt="kinkanhouse-sm"
@@ -127,7 +127,7 @@
         </div>
       </v-col>
       <v-col cols="12">
-        <a href="https://kinkan.travel/kinkan-vip" target="_blank" class="company-links">
+        <a href="https://kinkan.travel/kinkan-vip" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/kinkan-vip-sm.svg"
             alt="kinkan-vip-sm"
@@ -143,7 +143,7 @@
       </v-col>
 
       <v-col cols="12">
-        <a href="https://kinkan.travel/kinkan-meet" target="_blank" class="company-links">
+        <a href="https://kinkan.travel/kinkan-meet" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/kinkan-meet-sm.svg"
             alt="kinkan-meet-sm"
@@ -159,7 +159,7 @@
       </v-col>
 
       <v-col cols="12">
-        <a href="https://ajiron.aji-navi.com" target="_blank" class="company-links">
+        <a href="https://ajiron.aji-navi.com" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/ajiron-sm.svg"
             alt="ajiron"
@@ -175,7 +175,7 @@
       </v-col>
 
       <v-col cols="12">
-        <a href="https://baritoku.jp" target="_blank" class="company-links">
+        <a href="https://baritoku.jp" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/baritoku-sm.svg"
             alt="baritoku"
@@ -191,7 +191,7 @@
         </div>
       </v-col>
       <v-col cols="12">
-        <a href="https://kokotag.jp" target="_blank" class="company-links">
+        <a href="https://kokotag.jp" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/kokotag-sm.svg"
             alt="kokotag"
