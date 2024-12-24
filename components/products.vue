@@ -28,7 +28,12 @@
         </a> -->
       </v-col>
       <v-col cols="12">
-        <a href="https://kinkan.travel/kinkanhouse-kitasenju" target="_blank" rel="nofollow" class="company-links">
+        <a
+          href="https://kinkan.travel/kinkanhouse-kitasenju"
+          target="_blank"
+          rel="nofollow"
+          class="company-links"
+        >
           <img
             src="/products/kinkanhouse.svg"
             alt="kinkanhouse"
@@ -38,7 +43,7 @@
           />
         </a>
       </v-col>
-      <v-col cols="12">
+      <!-- <v-col cols="12">
         <a href="https://kinkan.travel/kinkan-vip" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/kinkan-vip.svg"
@@ -48,8 +53,8 @@
             class="logos"
           />
         </a>
-      </v-col>
-      <v-col cols="12">
+      </v-col> -->
+      <!-- <v-col cols="12">
         <a href="https://kinkan.travel/kinkan-meet" target="_blank" rel="nofollow" class="company-links">
           <img
             src="/products/kinkan-meet.svg"
@@ -59,9 +64,14 @@
             class="logos"
           />
         </a>
-      </v-col>
+      </v-col> -->
       <v-col cols="12">
-        <a href="https://ajiron.aji-navi.com" target="_blank" rel="nofollow" class="company-links">
+        <a
+          href="https://ajiron.aji-navi.com"
+          target="_blank"
+          rel="nofollow"
+          class="company-links"
+        >
           <img
             src="/products/ajiron.svg"
             alt="ajiron"
@@ -72,7 +82,12 @@
         </a>
       </v-col>
       <v-col cols="12">
-        <a href="https://baritoku.jp" target="_blank" rel="nofollow" class="company-links">
+        <a
+          href="https://baritoku.jp"
+          target="_blank"
+          rel="nofollow"
+          class="company-links"
+        >
           <img
             src="/products/baritoku.svg"
             alt="baritoku"
@@ -83,7 +98,12 @@
         </a>
       </v-col>
       <v-col cols="12">
-        <a href="https://kokotag.jp" target="_blank" rel="nofollow" class="company-links">
+        <a
+          href="https://kokotag.jp"
+          target="_blank"
+          rel="nofollow"
+          class="company-links"
+        >
           <img
             src="/products/kokotag.svg"
             alt="logo1"
@@ -112,7 +132,12 @@
         </div>
       </v-col> -->
       <v-col cols="12">
-        <a href="https://kinkan.travel/kinkanhouse-kitasenju" target="_blank" rel="nofollow" class="company-links">
+        <a
+          href="https://kinkan.travel/kinkanhouse-kitasenju"
+          target="_blank"
+          rel="nofollow"
+          class="company-links"
+        >
           <img
             src="/products/kinkanhouse-sm.svg"
             alt="kinkanhouse-sm"
@@ -126,8 +151,13 @@
           Welcome to Kinkanhouse Kita-senju
         </div>
       </v-col>
-      <v-col cols="12">
-        <a href="https://kinkan.travel/kinkan-vip" target="_blank" rel="nofollow" class="company-links">
+      <!-- <v-col cols="12">
+        <a
+          href="https://kinkan.travel/kinkan-vip"
+          target="_blank"
+          rel="nofollow"
+          class="company-links"
+        >
           <img
             src="/products/kinkan-vip-sm.svg"
             alt="kinkan-vip-sm"
@@ -138,12 +168,18 @@
         <div class="text-white" data-nosnippet>kinkan VIP</div>
         <div class="hr-white"></div>
         <div class="text-white" data-nosnippet>
-          An exquisite experience with a Japanese owner. Experiences you won't find in travel guidebooks.
+          An exquisite experience with a Japanese owner. Experiences you won't
+          find in travel guidebooks.
         </div>
-      </v-col>
+      </v-col> -->
 
-      <v-col cols="12">
-        <a href="https://kinkan.travel/kinkan-meet" target="_blank" rel="nofollow" class="company-links">
+      <!-- <v-col cols="12">
+        <a
+          href="https://kinkan.travel/kinkan-meet"
+          target="_blank"
+          rel="nofollow"
+          class="company-links"
+        >
           <img
             src="/products/kinkan-meet-sm.svg"
             alt="kinkan-meet-sm"
@@ -154,12 +190,18 @@
         <div class="text-white" data-nosnippet>kinkan Meet</div>
         <div class="hr-white"></div>
         <div class="text-white" data-nosnippet>
-          Would you like to interaction with Japanese locals ? <br> At a Japanese drinking restaurant or a cafe.
+          Would you like to interaction with Japanese locals ? <br />
+          At a Japanese drinking restaurant or a cafe.
         </div>
-      </v-col>
+      </v-col> -->
 
       <v-col cols="12">
-        <a href="https://ajiron.aji-navi.com" target="_blank" rel="nofollow" class="company-links">
+        <a
+          href="https://ajiron.aji-navi.com"
+          target="_blank"
+          rel="nofollow"
+          class="company-links"
+        >
           <img
             src="/products/ajiron-sm.svg"
             alt="ajiron"
@@ -175,7 +217,12 @@
       </v-col>
 
       <v-col cols="12">
-        <a href="https://baritoku.jp" target="_blank" rel="nofollow" class="company-links">
+        <a
+          href="https://baritoku.jp"
+          target="_blank"
+          rel="nofollow"
+          class="company-links"
+        >
           <img
             src="/products/baritoku-sm.svg"
             alt="baritoku"
@@ -191,7 +238,12 @@
         </div>
       </v-col>
       <v-col cols="12">
-        <a href="https://kokotag.jp" target="_blank" rel="nofollow" class="company-links">
+        <a
+          href="https://kokotag.jp"
+          target="_blank"
+          rel="nofollow"
+          class="company-links"
+        >
           <img
             src="/products/kokotag-sm.svg"
             alt="kokotag"
@@ -378,7 +430,7 @@ export default defineComponent({
   text-decoration: none;
 }
 @media only screen and (max-width: 600px) {
-  .v-col{
+  .v-col {
     height: unset;
     min-height: 150px;
   }
