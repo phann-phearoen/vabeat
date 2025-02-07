@@ -35,58 +35,58 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default defineComponent({
   name: "catch-phrases",
-  mounted() {
-    gsap.registerPlugin(ScrollTrigger);
-    const background1 = document.getElementById("cp-background");
-    ScrollTrigger.create({
-      trigger: background1,
-      start: "top 50%",
-      onEnter: () => {
-        background1?.classList.add("animate-background");
-        gsap.to("#text01", {
-          left: "15%",
-          // transform: "rotate(5deg)",
-          duration: 1.2,
-        });
-        gsap.to("#text02", {
-          left: "15%",
-          transform: "rotate(-2deg)",
-          top: "55%",
-          duration: 1.2,
-        });
-        // gsap.to("#text04", {
-        //   left: "31%",
-        //   transform: "rotate(-20deg)",
-        //   duration: 1.2,
-        // });
-        // gsap.to("#text06", {
-        //   left: "2%",
-        //   transform: "rotate(-15deg)",
-        //   duration: 1.2,
-        // });
-        // gsap.to("#text02", {
-        //   right: "5%",
-        //   transform: "rotate(-15deg)",
-        //   duration: 1.2,
-        // });
-        // gsap.to("#text05", {
-        //   right: "1%",
-        //   transform: "rotate(12deg)",
-        //   duration: 1.2,
-        // });
-        // gsap.to("#text07", {
-        //   right: "4%",
-        //   transform: "rotate(-23deg)",
-        //   duration: 1.2,
-        // });
-      },
-    });
-  },
+  // mounted() {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   const background1 = document.getElementById("cp-background");
+  //   ScrollTrigger.create({
+  //     trigger: background1,
+  //     start: "top 50%",
+  //     onEnter: () => {
+  //       background1?.classList.add("animate-background");
+  //       gsap.to("#text01", {
+  //         left: "15%",
+  //         // transform: "rotate(5deg)",
+  //         duration: 1.2,
+  //       });
+  //       gsap.to("#text02", {
+  //         left: "15%",
+  //         transform: "rotate(-2deg)",
+  //         top: "55%",
+  //         duration: 1.2,
+  //       });
+  //       // gsap.to("#text04", {
+  //       //   left: "31%",
+  //       //   transform: "rotate(-20deg)",
+  //       //   duration: 1.2,
+  //       // });
+  //       // gsap.to("#text06", {
+  //       //   left: "2%",
+  //       //   transform: "rotate(-15deg)",
+  //       //   duration: 1.2,
+  //       // });
+  //       // gsap.to("#text02", {
+  //       //   right: "5%",
+  //       //   transform: "rotate(-15deg)",
+  //       //   duration: 1.2,
+  //       // });
+  //       // gsap.to("#text05", {
+  //       //   right: "1%",
+  //       //   transform: "rotate(12deg)",
+  //       //   duration: 1.2,
+  //       // });
+  //       // gsap.to("#text07", {
+  //       //   right: "4%",
+  //       //   transform: "rotate(-23deg)",
+  //       //   duration: 1.2,
+  //       // });
+  //     },
+  //   });
+  // },
 });
 </script>
 
@@ -119,14 +119,14 @@ export default defineComponent({
 #text01 {
   position: absolute;
   width: 65vw;
-  left: -65%;
+  left: 15%;
   top: 20%;
 }
 #text02 {
   position: absolute;
   width: 60vw;
-  right: -63%;
-  top: 21%;
+  left: 15%;
+  top: 55%;
 }
 /* #text03 {
   position: absolute;
