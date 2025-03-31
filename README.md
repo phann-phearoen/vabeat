@@ -72,4 +72,6 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Deployment CI/CD
+This website is automatically deployed by AWS Amplify once a branch is merged or pushed to the main branch. 
+Amplify is the production deployment of this website.
