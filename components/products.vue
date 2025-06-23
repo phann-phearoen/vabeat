@@ -145,9 +145,9 @@
             id="kinkanhouse-sm"
           />
         </a>
-        <div class="text-white" data-nosnippet>キンカンハウス北千住</div>
+        <div class="text-white" data-nosnippet data-noindex>キンカンハウス北千住</div>
         <div class="hr-white"></div>
-        <div class="text-white" data-nosnippet>
+        <div class="text-white" data-nosnippet data-noindex>
           Welcome to Kinkanhouse Kita-senju
         </div>
       </v-col>
@@ -165,9 +165,9 @@
             id="kinkan-vip-sm"
           />
         </a>
-        <div class="text-white" data-nosnippet>kinkan VIP</div>
+        <div class="text-white" data-nosnippet data-noindex>kinkan VIP</div>
         <div class="hr-white"></div>
-        <div class="text-white" data-nosnippet>
+        <div class="text-white" data-nosnippet data-noindex>
           An exquisite experience with a Japanese owner. Experiences you won't
           find in travel guidebooks.
         </div>
@@ -187,9 +187,9 @@
             id="kinkan-meet-sm"
           />
         </a>
-        <div class="text-white" data-nosnippet>kinkan Meet</div>
+        <div class="text-white" data-nosnippet data-noindex>kinkan Meet</div>
         <div class="hr-white"></div>
-        <div class="text-white" data-nosnippet>
+        <div class="text-white" data-nosnippet data-noindex>
           Would you like to interaction with Japanese locals ? <br />
           At a Japanese drinking restaurant or a cafe.
         </div>
@@ -209,9 +209,9 @@
             id="ajiron-sm"
           />
         </a>
-        <div class="text-white" data-nosnippet>アジロン</div>
+        <div class="text-white" data-nosnippet data-noindex>アジロン</div>
         <div class="hr-white"></div>
-        <div class="text-white" data-nosnippet>
+        <div class="text-white" data-nosnippet data-noindex>
           個人にITエンジニアを提供。破格でITエンジニアをパートナーに。
         </div>
       </v-col>
@@ -230,9 +230,9 @@
             id="baritoku-sm"
           />
         </a>
-        <div class="text-white" data-nosnippet>バリトク</div>
+        <div class="text-white" data-nosnippet data-noindex>バリトク</div>
         <div class="hr-white"></div>
-        <div class="text-white" data-nosnippet>
+        <div class="text-white" data-nosnippet data-noindex>
           バリ得！大特価の日用品を扱う会員制通販サイトです。
           廃棄処分されてしまう日用品を大特価で購入できます。
         </div>
@@ -251,9 +251,9 @@
             id="kokotag"
           />
         </a>
-        <div class="text-white" data-nosnippet>ココタグ</div>
+        <div class="text-white" data-nosnippet data-noindex>ココタグ</div>
         <div class="hr-white"></div>
-        <div class="text-white" data-nosnippet>
+        <div class="text-white" data-nosnippet data-noindex>
           ココタグは、Apple正規認証品のスマートタグです。<br />
           落とし物や忘れ物の紛失を防止します。Appleの「探す」アプリに対応！
         </div>

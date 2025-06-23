@@ -46,7 +46,10 @@ export default defineNuxtConfig({
           property: "og:image",
           content: `/linkcard.jpg`,
         },
-        
+        {
+          name: "robots",
+          content: "index, follow, max-snippet:160, max-image-preview:large"
+        }
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
     }

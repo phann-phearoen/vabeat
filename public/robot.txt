@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Prevent indexing of product descriptions in search snippets
+User-agent: Googlebot
+Disallow: /products/descriptions
+
+Sitemap: https://vabeat.co.jp/sitemap.xml
